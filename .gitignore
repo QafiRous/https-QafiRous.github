@@ -1,34 +1,173 @@
-# Gradle files
-.gradle/
-build/
+ cafi-rous.html
 
-# Local configuration file (sdk path, etc)
-local.properties
+```html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAFI ROUS</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00aaff, #fffbc1);
+    color: #333;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #0077cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  nav {
+    background: #00c4ff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fffefa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00aaff66;
+  }
+  h2 {
+    color: #0077cc;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin: 10px 0;
+    padding-left: 15px;
+    position: relative;
+  }
+  ul li::before {
+    content: "•";
+    color: #00aaff;
+    position: absolute;
+    left: 0;
+  }
+  footer {
+    background: #0077cc;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #00c4ff;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 12px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #005fa3;
+  }
+</style>
+</head>
+<body>
 
-# Log/OS Files
-*.log
+<header>
+  <h1>CAFI ROUS</h1>
+  <p>قهوة، مباريات، حلويات، وجو لا يُنسى</p>
+</header>
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+<nav>
+  <a href="#about">عن المقهى</a>
+  <a href="#menu">قائمة الخدمات</a>
+  <a href="#contact">تواصل معنا</a>
+</nav>
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+<section id="about">
+  <h2>عن CAFI ROUS</h2>
+  <p>في CAFI ROUS نحب القهوة الفاخرة، نبث المباريات الحية، ونقدم الحلويات الطازجة وسط أجواء دافئة ومميزة تناسب الكل.</p>
+</section>
 
-# Keystore files
-*.jks
-*.keystore
+<section id="menu">
+  <h2>قائمة خدماتنا</h2>
+  <ul>
+    <li>قهوة مختصة بمذاقات متنوعة</li>
+    <li>بث مباشر لجميع المباريات الرياضية</li>
+    <li>حلويات منزلية التحضير والشهية</li>
+    <li>واي فاي مجاني وجلسات خاصة</li>
+    <li>فعاليات ترفيهية وثقافية</li>
+  </ul>
+</section>
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+<section id="contact">
+  <h2>تواصل معنا</h2>
+  <form>
+    <label for="name">اسمك:</label>
+    <input type="text" id="name" name="name" placeholder="أدخل اسمك" required />
 
-# Android Profiling
-*.hprof
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required />
+
+    <label for="message">رسالتك:</label>
+    <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" rows="4" required></textarea>
+
+    <button type="submit">إرسال</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 CAFI ROUS - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
+```
+
+
+```html
+<section id="gallery">
+  <h2>معرض الصور</h2>
+  <div style="display:flex;gap:15px;flex-wrap:wrap;">
+    <img src="https://i.imgur.com/1.jpg" alt="صورة1" style="width:30%; border-radius:8px;" />
+    <img src="https://i.imgur.com/2.jpg" alt="صورة2" style="width:30%; border-radius:8px;" />
+    <img src="https://i.imgur.com/3.jpg" alt="صورة3" style="width:30%; border-radius:8px;" />
+  </div>
+</section>
+
+<section id="offers" style="margin-top:40px;">
+  <h2>العروض الخاصة</h2>
+  <ul>
+    <li>☕️ خصم 20% على جميع أنواع القهوة طوال الأسبوع</li>
+    <li>🍰 اشترِ قطعة حلويات واحصل على واحدة مجانًا أيام الجمعة</li>
+    <li>🏀 شاهد مباريات اليوم مع مشروب مجاني</li>
+  </ul>
+</section>
+```
